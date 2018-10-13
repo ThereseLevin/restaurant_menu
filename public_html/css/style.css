@@ -1,4 +1,5 @@
 /* --- VARIABLES ---*/
+@import url("https://fonts.googleapis.com/css?family=Charmonman|Fjalla+One");
 /* COLORS */
 /* FONTS */
 /* Font family */
@@ -8,6 +9,14 @@ body {
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+}
+
+h1, #text-2, small {
+  font-family: "Fjalla One", sans-serif;
+}
+
+h3, #text-1 {
+  font-family: "Charmonman", cursive;
 }
 
 header {
@@ -26,9 +35,25 @@ header p {
 
 .section-1 {
   background-color: white;
+  display: grid;
+  grid-gap: 3em;
+  padding-top: 3em;
 }
 .section-1 h2 {
   text-align: center;
+}
+
+.section-1-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-bottom: 3em;
+}
+.section-1-2 #text-1 {
+  font-size: 5em;
+}
+.section-1-2 #text-2 {
+  font-size: 1.5em;
 }
 
 .section-1-1-1 {
@@ -43,10 +68,34 @@ header p {
 
 .section-2 {
   background-color: rebeccapurple;
+  text-align: center;
+}
+
+.section-3 {
+  width: 70%;
+  height: 100%;
+  background-color: saddlebrown;
+  margin: auto;
 }
 
 main {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
+}
+
+@media only screen and (max-width: 1000px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .section-1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-1-2 {
+    grid-template-columns: 1fr;
+  }
 }

@@ -4,3 +4,12 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+h1, #text-2, small {
+    font-family: $font-main;
+}
+
+h3, #text-1  {
+    font-family: $font-second;
+}
+
