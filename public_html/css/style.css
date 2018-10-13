@@ -3,6 +3,50 @@
 /* FONTS */
 /* Font family */
 /* Font sizes */
-div {
-  border: 1px solid black;
+body {
+  background-image: url("../media/mat.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+header {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: auto;
+}
+header h1 {
+  text-align: center;
+  margin: 0;
+}
+header p {
+  text-align: center;
+  margin: 0;
+}
+
+.section-1 {
+  background-color: white;
+}
+.section-1 h2 {
+  text-align: center;
+}
+
+.section-1-1-1 {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+}
+
+.section-2 {
+  background-color: rebeccapurple;
+}
+
+main {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
 }

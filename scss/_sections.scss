@@ -1,0 +1,27 @@
+.section-1 {
+    background-color: white;
+    h2 {
+        text-align: center;
+    }
+    
+}
+
+.section-1-1-1 {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+}
+
+
+.section-2 {
+    background-color: rebeccapurple;
+}
+
+
+
+main {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+}
