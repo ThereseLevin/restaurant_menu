@@ -63,6 +63,9 @@ header p {
 .section-1-2 #text-2 {
   font-size: 1.5em;
 }
+.section-1-2 input {
+  padding: 0.5em;
+}
 
 .section-1-1-1 {
   display: -webkit-inline-box;
