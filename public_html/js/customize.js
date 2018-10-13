@@ -80,15 +80,38 @@ function updateAll4(event) {
 }
 
 
-document.querySelector("#clickID").addEventListener('submit', function(event) {
+document.querySelector("#clickID").addEventListener('click', function(event) {
 
-  // Skapar variablen formData. Hämtar värde från formulär
-  let formData = document.querySelector("#heading-text").value;
-  
-  //Hittar outputtext i dokumentet. Skriver in värdet från formData i outputtext.
+  //Till menyalternativ
+  let formData = document.querySelector(".m-text").value;
   document.querySelector("#m-1").innerHTML = formData;
 
-  //För att texten ska stanna på sidan, och inte ladda in en ny sida vid tryckning på submit.
+   let formData2 = document.querySelector(".m-text-2").value;
+   document.querySelector("#m-2").innerHTML = formData2;
+
+   let formData3 = document.querySelector(".m-text-3").value;
+   document.querySelector("#m-3").innerHTML = formData3;
+
+   let formData4 = document.querySelector(".m-text-4").value;
+   document.querySelector("#m-4").innerHTML = formData4;
+
+   let formData5 = document.querySelector(".m-text-5").value;
+   document.querySelector("#m-5").innerHTML = formData5;
+
+   let formData6 = document.querySelector(".m-text-6").value;
+   document.querySelector("#m-6").innerHTML = formData6;
+
+   let formData7 = document.querySelector(".m-text-7").value;
+   document.querySelector("#m-7").innerHTML = formData7;
+
+   //Till Meny rubrik
+  let formData8 = document.querySelector("#heading-text").value;
+  document.querySelector("h3").innerHTML = formData8;
+
+  //Till underrubrik
+  let formData9 = document.querySelector("#under-heading-text").value;
+  document.querySelector("small").innerHTML = formData9;
+
   document.getElementById("clickID").addEventListener("click", function(event){
       event.preventDefault()
   });
