@@ -91,12 +91,16 @@
                                 <br>
 
                                 <input type="submit" value="Lägg till" id="clickID">
-                                <!--<button onclick="gotFromForm()" id="clickButton">Skriv</button>-->
+
+                                <a href="#" onclick="HTMLtoPDF()">Download PDF</a>
+
+                                
+                        
                         </div>
                 </div>
             </div>
             <div class="section-2">
-                <div class="section-3">
+                <div class="section-3" id="HTMLtoPDF">
                     <h3>Meny</h3>
                     <small>Den här veckan serverar vi:</small>
                     <div class="item"><p id="m-1">Alternativ 1</p></div>
@@ -107,6 +111,7 @@
                     <div class="item"><p id="m-6">Alternativ 6</p></div>
                     <div class="item"><p id="m-7">Alternativ 7</p></div>
                 </div>
+                
             </div>
         </main>
         <footer>
@@ -114,5 +119,10 @@
         </footer>
 
     </div>
+
+<!-- Filer för att skapa PDF -->
+<script src="js/jspdf.js"></script>
+<script src="js/jquery-2.1.3.js"></script>
+<script src="js/pdfFromHTML.js"></script>
 </body>
 </html>
