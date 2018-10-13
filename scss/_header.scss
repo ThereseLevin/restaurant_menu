@@ -2,9 +2,12 @@ header {
     width: 100%;
     background-color: rgba($color: #fff, $alpha: 0.5);
     height: auto;
+    margin-bottom: 3em;
+    padding: 2em 2em;
     h1 {
         text-align: center;
         margin: 0;
+        font-size: $font-size-second;
     }
     p {
         text-align: center;

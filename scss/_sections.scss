@@ -1,5 +1,5 @@
 .section-1 {
-    background-color: white;
+    background-color: rgba($color: #fff, $alpha: 0.8);
     h2 {
         text-align: center;
     }
@@ -15,11 +15,11 @@
     padding-bottom: 3em;
     
     #text-1 {
-        font-size: 5em;
+        font-size: $font-size-second;
     }
 
     #text-2 {
-        font-size: 1.5em;
+        font-size: $font-size-third;
     }
 }
 
@@ -32,15 +32,19 @@
 
 
 .section-2 {
-    background-color: rebeccapurple;
     text-align: center;
+    
 }
 
 .section-3 {
-    width: 70%;
+    width: 60%;
     height: 100%;
-    background-color: saddlebrown;
     margin: auto;
+    background-color: azure;
+    h3 {
+        margin: 0;
+        font-size: $font-size-main;
+    }
 }
 
 
