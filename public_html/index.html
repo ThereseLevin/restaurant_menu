@@ -7,6 +7,8 @@
     <meta name="description" content="an adaptable menu for restaurants">
     <meta name="keywords" content="menu, food, restaurant">
     <meta name="author" content="Therese Levin">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/color-change.js" defer></script>
     <title>Restaurang-meny</title>
 </head>
 <body>
@@ -18,6 +20,46 @@
         </header>
         <main>
             <div class="section-1">
+                <div class="section-1-1">
+                    <h2>Färger</h2>
+
+                    <label for="colorChange">Bakgrund</label>
+                    <br>
+                    <input type="color" value="#ff0000" id="backg-color">
+                    <br>
+
+                    <label for="colorChange">Huvudrubrik</label>
+                    <br>
+                    <input type="color" value="#ff0000" id="h1-color">
+                    <br>
+
+                    <label for="colorChange">Underrubrik</label>
+                    <br>
+                    <input type="color" value="#ff0000" id="h1-color">
+                    <br>
+
+                    <label for="colorChange">Menyalternativ</label>
+                    <br>
+                    <input type="color" value="#ff0000" id="h1-color">
+                    <br>
+
+                </div>
+                <div class="section-1-2">
+                    <h2>Bilder</h2>
+
+                    <label>Bakgrundsbild</label>
+                    <form action="/action_page.php">
+                        <input type="file" name="pic" accept="image/*">
+                        <input type="submit" value="Lägg till">
+                    </form>
+
+                    <label>Avslutningsbild</label>
+                    <form action="/action_page.php">
+                        <input type="file" name="pic" accept="image/*">
+                        <input type="submit" value="Lägg till">
+                    </form>
+
+                </div>
 
             </div>
             <div class="section-2">
