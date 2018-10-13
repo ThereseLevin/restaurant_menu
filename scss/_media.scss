@@ -8,9 +8,18 @@
     .section-1-1-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 3em;
     }
 
     .section-1-2 {
         grid-template-columns: 1fr;
+    }
+
+    header p {
+        margin-top: 1em;
+    }
+
+    h2 {
+        font-size: $font-size-second;
     }
 }
