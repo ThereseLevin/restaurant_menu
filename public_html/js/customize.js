@@ -80,7 +80,21 @@ function updateAll4(event) {
 }
 
 
+document.querySelector("#clickID").addEventListener('submit', function(event) {
 
+  // Skapar variablen formData. Hämtar värde från formulär
+  let formData = document.querySelector("#heading-text").value;
+  
+  //Hittar outputtext i dokumentet. Skriver in värdet från formData i outputtext.
+  document.querySelector("#m-1").innerHTML = formData;
+
+  //För att texten ska stanna på sidan, och inte ladda in en ny sida vid tryckning på submit.
+  document.getElementById("clickID").addEventListener("click", function(event){
+      event.preventDefault()
+  });
+  
+
+} , false);
 
 // const inputs = document.querySelector('#h1-color');
 
