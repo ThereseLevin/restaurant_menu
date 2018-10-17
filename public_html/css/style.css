@@ -342,7 +342,7 @@ template {
 /* Font family */
 /* Font sizes */
 body {
-  background-image: url("../media/green.jpg");
+  background-image: url("../media/rest.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -362,6 +362,11 @@ p, label, input {
 
 .all {
   width: 100%;
+}
+
+canvas {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 header {

@@ -61,6 +61,13 @@
                                 <br>
                                 <input type="text" value="Menyrubrik" id="under-heading-text">
                                 <br>
+                                <p>Välj ett typsnitt för huvudrubtiken:</p>
+                                <select>
+                                    <option value="Helvetica" id="Helvetica">Helvetica</option>
+                                    <option value="Arial" id="Arial">Arial</option>
+                                    <option value="Times" id="Times">Times</option>
+                                    <option value="Garamond" id="Garamond">Garamond</option>
+                                </select>
                         </div>
                         
                         <div>
@@ -92,15 +99,13 @@
 
                                 <input type="submit" value="Lägg till" id="clickID">
 
-                                <a href="#" onclick="HTMLtoPDF()">Download PDF</a>
-
-                                
-                        
+                                <a href="javascript:getScreenshot">Spara meny</a>
+                                <div id="box-1"></div>
                         </div>
                 </div>
             </div>
             <div class="section-2">
-                <div class="section-3" id="HTMLtoPDF">
+                <div class="section-3">
                     <h3>Meny</h3>
                     <small>Den här veckan serverar vi:</small>
                     <div class="item"><p id="m-1">Alternativ 1</p></div>
@@ -120,9 +125,5 @@
 
     </div>
 
-<!-- Filer för att skapa PDF -->
-<script src="js/jspdf.js"></script>
-<script src="js/jquery-2.1.3.js"></script>
-<script src="js/pdfFromHTML.js"></script>
 </body>
 </html>

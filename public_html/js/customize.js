@@ -9,6 +9,10 @@ function startUp() {
     hColor = document.querySelector("#h1-color");
     uColor = document.querySelector("#u-color");
     mColor = document.querySelector("#m-color");
+    hFont = document.querySelector("#Helvetica");
+    aFont = document.querySelector("#h1-color");
+    tFont = document.querySelector("#u-color");
+    gFont = document.querySelector("#m-color");
 
     //lyssnar efter event, kör function
     bColor.addEventListener("input", updateFirst, false);
@@ -22,6 +26,8 @@ function startUp() {
 
     mColor.addEventListener("input", updateFirst4, false);
     mColor.addEventListener("change", updateAll4, false);
+
+    hFont.addEventListener("click", updateFirst5, false);
 
     //först markerad
     bColor.select();
@@ -79,6 +85,13 @@ function updateAll4(event) {
   });
 }
 
+function updateFirst4(event) {
+  let font = document.querySelector("h3");
+  if (font) {
+    font.style.fontFamily = event.target.value;
+  }
+}
+
 
 document.querySelector("#clickID").addEventListener('click', function(event) {
 
@@ -119,6 +132,18 @@ document.querySelector("#clickID").addEventListener('click', function(event) {
 
 } , false);
 
+function getScreenshot() {
+  html2canvas(document.body,{
+    onrendered: function(canvas) {
+      $('.box-1').html("");
+      $('.box-1').append(canvas);
+    }
+  });
+}
+
+html2canvas(document.querySelector("#capture")).then(canvas => {
+    document.body.appendChild(canvas)
+});
 // const inputs = document.querySelector('#h1-color');
 
 // function handleUpdate() {
