@@ -28,6 +28,7 @@ function startUp() {
     mColor.addEventListener("change", updateAll4, false);
 
     hFont.addEventListener("click", updateFirst5, false);
+    hFont.addEventListener("change", updateAll5, false);
 
     //först markerad
     bColor.select();
@@ -85,12 +86,19 @@ function updateAll4(event) {
   });
 }
 
-function updateFirst4(event) {
+function updateFirst5(event) {
   let font = document.querySelector("h3");
   if (font) {
     font.style.fontFamily = event.target.value;
   }
 }
+
+function updateAll5(event) {
+  document.querySelectorAll(".item").forEach(function(item) {
+    item.style.color = event.target.value;
+  });
+}
+
 
 
 document.querySelector("#clickID").addEventListener('click', function(event) {
@@ -144,6 +152,14 @@ function getScreenshot() {
 html2canvas(document.querySelector("#capture")).then(canvas => {
     document.body.appendChild(canvas)
 });
+
+
+
+
+
+
+
+//KOMMENTARER
 // const inputs = document.querySelector('#h1-color');
 
 // function handleUpdate() {
